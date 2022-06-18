@@ -391,6 +391,16 @@
 		});
 	  });
 	}
+	  if ($("#toggle3").length > 0) {
+		  $(function () {
+			  $('#toggle3 .toggle-content').hide();
+			  $('#toggle3 h4:first').next().slideDown(500).parent().addClass("active");
+			  $('#toggle3 h4').on("click", function () {
+				  $(this).next().slideToggle('slow').parent().toggleClass("active");
+			  });
+		  });
+	  }
+		  
 
 	if ($(".analys-box").length > 0) {
 	  $("#analys11").waypoint(function () {

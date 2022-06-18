@@ -347,10 +347,10 @@
 	  noUiSlider.create(nonLinearSlider, {
 		connect: true,
 		behaviour: 'tap',
-		start: [15, 35],
+		start: [10, 200],
 		range: {
-		  'min': [10],
-		  'max': [40]
+		  'min': [5],
+		  'max': [300]
 		}
 	  });
 	  var nodes = [

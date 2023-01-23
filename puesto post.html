@@ -637,7 +637,7 @@ seo agencies,social media marketing agencies,web design agencies,email marketing
     </section>
 
 
-                    <div class="post-nav w-100 d-flex flex-wrap justify-content-between">
+                   <!-- <div class="post-nav w-100 d-flex flex-wrap justify-content-between">
                         <div class="post-nav-item post-prev">
                             <a class="d-block" href="javascript:void(0);" title="">
                                 <div class="post-nav-item d-flex flex-wrap align-items-center">
@@ -661,12 +661,12 @@ seo agencies,social media marketing agencies,web design agencies,email marketing
                             </a>
                         </div>
                     </div><!-- Post Navigation -->
-                    <div class="related-posts-wrap mt-45 mb-60 w-100">
+                   <!-- <div class="related-posts-wrap mt-45 mb-60 w-100">
                         <div class="sec-title w-100 position-relative">
                             <h2 class="mb-0">Related Posts</h2>
                             <i class="btm-ln bg-color3"></i>
                         </div><!-- Sec Title -->
-                        <div class="blog-wrap position-relative w-100">
+                      <!--  <div class="blog-wrap position-relative w-100">
                             <div class="row post-caro">
                                 <div class="col-md-6 col-sm-6 col-lg-4">
                                     <div class="post-box brd-rd15 w-100">
@@ -731,13 +731,13 @@ seo agencies,social media marketing agencies,web design agencies,email marketing
                             </div>
                         </div><!-- Blog Wrap -->
                     </div><!-- Related Posts Wrap -->
-                    <div class="reply-form-wrap w-100">
+                  <!--  <div class="reply-form-wrap w-100">
                         <div class="devider bg-color25 mb-80 w-100"></div>
                         <div class="sec-title w-100 position-relative">
                             <h2 class="mb-0">Write A Comment</h2>
                             <i class="btm-ln bg-color3"></i>
                         </div><!-- Sec Title -->
-                        <form class="w-100">
+                      <!-- <form class="w-100">
                             <div class="row mrg20">
                                 <div class="col-md-6 col-sm-6 col-lg-6">
                                     <div class="field-box w-100">
@@ -786,9 +786,14 @@ seo agencies,social media marketing agencies,web design agencies,email marketing
                             <div class="widget text-center w-100">
                                 <h4>Obtenga las últimas Actualizaciones!</h4>
                                 <div class="newsletter-wrap w-100">
-                                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                                    <div class="elfsight-app-25e841e8-80a0-4e7b-b2b1-40b7852491dd"></div>
+                                    <form class="newsletter position-relative w-100"  method="post" action="https://formspree.io/f/xbjelzvg">
+                                        <input class="rounded-pill email w-100" type="email" name="email" placeholder="Enter your email" required>
+                                        <!-----------si no le pones la accion al boton no hace nada------------------------------------->
+                                        <button type="submit" class="thm-btn d-inline-block rounded-pill position-absolute" ><i class="flaticon-telegram"></i></button>
+                                         <input type="hidden" value="" name="recaptchaResponse">
+                                        <div class="response w-100"></div>
 
+                                    </form>
                                 </div>
                             </div>
                         </div>

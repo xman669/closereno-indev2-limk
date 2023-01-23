@@ -583,24 +583,31 @@ seo agencies,social media marketing agencies,web design agencies,email marketing
                     <i class="btm-ln bg-color3"></i>
                 </div><!-- Sec Title -->
                 <div class="cnt-wrap text-center position-relative w-100">
-                    <form class="w-100 d-inline-block">
+                 <form class="w-100 d-inline-block" action="https://formspree.io/f/mpzbqkrq" method="POST" source="custom" name="form">
+                        <div class="form-group w-100">
+                            <div class="response w-100"></div>
+                        </div>
                         <div class="row mrg20">
                             <div class="col-md-6 col-sm-6 col-lg-6">
                                 <div class="field-box w-100">
-                                    <input type="text" placeholder="Nombre">
+                                    <input class="fname" type="text" name="fname" placeholder="Tu Nombre" required>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6 col-lg-6">
                                 <div class="field-box w-100">
-                                    <input type="email" placeholder="Correo">
+                                    <input class="email" type="email" name="email" placeholder="Tu correo electrónico" required>
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
                                 <div class="field-box w-100">
-                                    <textarea placeholder="Envianos un Mensaje"></textarea>
+                                    <textarea class="contact_message" name="contact_message" placeholder="Enviar Mensaje" style="height:140px"; required></textarea>
                                 </div>
                                 <div class="field-btn text-center w-100">
-                                    <button class="thm-btn d-inline-block rounded-pill" type="submit">Enviar petición</button>
+                                    <!-------cambiar el bottom por la accion <a/>------>
+                                    <button href="index2.html" class="thm-btn d-inline-block rounded-pill"  type="submit">Enviar Petición</button>
+                                    <!-----------agregar esta linea para limpiar-------------------->
+                                    <input type="hidden" value="" name="recaptchaResponse">
+
                                 </div>
                             </div>
                         </div>
@@ -791,10 +798,13 @@ seo agencies,social media marketing agencies,web design agencies,email marketing
                             <div class="widget text-center w-100">
                                 <h4>Obtenga las últimas Actualizaciones!</h4>
                                 <div class="newsletter-wrap w-100">
-                                    <form class="newsletter position-relative w-100" id="subscribe-form" method="post" action="#">
+                                    <form class="newsletter position-relative w-100"  method="post" action="https://formspree.io/f/xbjelzvg">
                                         <input class="rounded-pill email w-100" type="email" name="email" placeholder="Enter your email" required>
-                                        <button class="thm-btn d-inline-block rounded-pill position-absolute" id="subscribe-button"><i class="flaticon-telegram"></i></button>
+                                        <!-----------si no le pones la accion al boton no hace nada------------------------------------->
+                                        <button type="submit" class="thm-btn d-inline-block rounded-pill position-absolute" ><i class="flaticon-telegram"></i></button>
+                                         <input type="hidden" value="" name="recaptchaResponse">
                                         <div class="response w-100"></div>
+
                                     </form>
                                 </div>
                             </div>
